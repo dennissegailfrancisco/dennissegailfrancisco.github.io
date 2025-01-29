@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,intial-scale1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <title> dennisse gail francisco porfolio</title>
+    <script>
+        function myFunction() {
+            document.getElementById("mgnavcontent").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+
+<nav>
+    <div class="meetgailnav">
+        <div onclick="myFunction()" class="btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="mgnav" id="mgnavcontent">
+
+            <li> <a id="hna" href="index.html"> Home </a> </li>
+
+            <li> <a id="hnb" href="meetgail.html"> Meet Gail </a> </li>
+
+            <li> <a id="hnc" href="journal.html"> Journal </a></li>
+
+            <li> <a id="hnd" href="contact.html"> Contact </a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<body>
+    <div class="gallery1">
+        <div id="grid1">
+            <img src="places/bali.png" alt="Bali">
+            <div class="overlay1">
+                <p> Bali Indonisia </p>
+            </div>
+        </div>
+
+        <div id="grid2">
+            <img src="places/newyork.png" alt="newyork">
+            <div class="overlay1">
+                <p> New York City </p>
+            </div>
+        </div>
+
+        <div id="grid3">
+            <img src="places/cebu.png" alt="Cebu">
+            <div class="overlay1">
+                <p> Cebu </p>
+            </div>
+        </div>
+
+        <div id="grid4">
+            <img src="places/maldives.png" alt="maldives">
+            <div class="overlay1">
+                <p>Maldives</p>
+            </div>
+        </div>
+
+        <div id="grid5">
+            <img src="places/korea.png" alt="Korea">
+            <div class="overlay1">
+                <p> Korea </p>
+            </div>
+        </div>
+
+        <div id="grid6">
+            <img src="places/neworlance.png" alt="new">
+
+            <div class="overlay2">
+                <p>New Orleans </p>
+            </div>
+        </div>
+
+        <div id="grid7">
+
+            <img src="places/norway.png" alt="norway">
+            <div class="overlay2">
+                <p>Norway</p>
+            </div>
+            </div>
+
+        <div id="grid8">
+            <img src="places/iceland.png" alt="iceland">
+            <div class="overlay2">
+                <p> Iceland </p>
+            </div>
+        </div>
+        <div id="grid9">
+
+            <img src="places/denmark.png" alt="denmark">
+            <div class="overlay2">
+                <p> Denmark</p>
+            </div>
+        </div>
+        <div id="grid10">
+            <img src="places/batanes.png" alt="batanes">
+            <div class="overlay2">
+                <p> Batanes </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallery2">
+        <div id="grid11">
+            <img src="places/cuba.png" alt="cuba">
+            <div class="overlay">
+                <p>cuba</p>
+            </div>
+        </div>
+        <div id="grid12">
+
+            <img src="places/japan.png" alt="drive">
+            <div class="overlay">
+                <p> Japan </p>
+            </div>
+        </div>
+        </div>
+
+
+</body>
+
+</html>

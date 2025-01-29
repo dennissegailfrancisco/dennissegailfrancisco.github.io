@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <title> dennisse gail francisco porfolio</title>
+    <script>
+        function myFunction() {
+            document.getElementById("mgnavcontent").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+
+<nav>
+    <div class="meetgailnav">
+        <div onclick="myFunction()" class="btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="mgnav" id="mgnavcontent">
+
+            <li> <a id="hna" href="index.html"> Home </a> </li>
+
+            <li> <a id="hnb" href="meetgail.html"> Meet Gail </a> </li>
+
+            <li> <a id="hnc" href="journal.html"> Journal </a></li>
+
+            <li> <a id="hnd" href="contact.html"> Contact </a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<body>
+    <div class="gallery1">
+       
+        <div id="grid1"> <video width="310" height="486" controls autoplay>
+            <source src="past\singaporedump.mp4" type="video/mp4">
+         
+            Your browser does not support the video tag.
+          </video>
+        
+        </div>
+
+        <div id="grid2">
+            <img src="past\phytons.png" alt="phytons">
+            <div class="overlay1">
+                <p> Let's Go Phytons </p>
+            </div>
+        </div>
+
+        <div id="grid3">
+
+            <img src="past/pamper.png" alt="pamper">
+            <div class="overlay1">
+                <p> Pamper Day at the Beauty House <BR> BY RAD </p>
+            </div>
+        </div>
+
+        <div id="grid4">
+
+            <img src="past/farlight.png" alt="farlight">
+            <div class="overlay1">
+                <p>Farlight With Friends </p>
+            </div>
+        </div>
+        <div id="grid5">
+
+            <img src="past/fam.png" alt="singapore">
+            <div class="overlay1">
+                <p> Singapore With This Fam </p>
+            </div>
+        </div>
+        <div id="grid6">
+            <img src="past/dingalan.png" alt="dingalan">
+
+            <div class="overlay2">
+                <p>Celebrating Daddylo's Birthday</p>
+            </div>
+        </div>
+        <div id="grid7">
+
+            <img src="past/moa.png" alt="moa">
+            <div class="overlay2">
+                <p> MOA with Friends </p>
+            </div>
+        </div>
+        <div id="grid8">
+
+            <img src="past/kwinsole.png" alt="kwinsole">
+            <div class="overlay2">
+                <p> Kwinsole Cafe </p>
+            </div>
+        </div>
+        <div id="grid9">
+
+            <img src="past/friends.png" alt="hs">
+            <div class="overlay2">
+                <p> Hangout with HS Friends </p>
+            </div>
+        </div>
+        <div id="grid10">
+
+            <img src="past/batangas.png" alt="batangas">
+            <div class="overlay2">
+                <p> Escape at Batangas </p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery2">
+        <div id="grid11">
+
+            <img src="past/sb19.png" alt="sb19">
+            <div class="overlay">
+                <p> WYAT Tour by SB19 </p>
+            </div>
+        </div>
+        <div id="grid12">
+
+            <img src="past/drive.png" alt="drive">
+            <div class="overlay">
+                <p> Past Time Drive</p>
+            </div>
+        </div>
+        <div id="grid13">
+
+            <img src="past/citechella.png" alt="CITE">
+            <div class="overlay">
+                <p> Citechella 2023 </p>
+            </div>
+        </div>
+        <div id="grid14">
+
+            <img src="past/newyear.png" alt="newyear">
+            <div class="overlay">
+                <p> New Year's Eve </p>
+            </div>
+        </div>
+        <div id="grid15">
+
+            <img src="past/bohol.png" alt="bohol">
+            <div class="overlay">
+                <p> Bohol 2020 </p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

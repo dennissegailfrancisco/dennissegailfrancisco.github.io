@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <title> dennisse gail francisco porfolio</title>
+    <script>
+        function myFunction() {
+            document.getElementById("mgnavcontent").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+
+<nav>
+    <div class="meetgailnav">
+        <div onclick="myFunction()" class="btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="mgnav" id="mgnavcontent">
+
+            <li> <a id="hna" href="index.html"> Home </a> </li>
+
+            <li> <a id="hnb" href="meetgail.html"> Meet Gail </a> </li>
+
+            <li> <a id="hnc" href="journal.html"> Journal </a></li>
+
+            <li> <a id="hnd" href="contact.html"> Contact </a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<body>
+    <div class="gallery1">
+
+        <div id="grid1">
+            <img src="childhood/luciana.png" alt="lusiana">
+            <div class="overlay1">
+                <p> Visiting Grandparent from mom's side </p>
+            </div>
+        </div>
+
+        <div id="grid2">
+            <img src="childhood/titas.png" alt="tita">
+            <div class="overlay1">
+                <p> 2nd and 3rd Mother</p>
+            </div>
+        </div>
+
+        <div id="grid3">
+
+            <img src="childhood/psp.png" alt="psp">
+            <div class="overlay1">
+                <p> The PSP that almost got me Kidnapped </p>
+            </div>
+        </div>
+
+        <div id="grid4">
+
+            <img src="childhood/cfriends.png" alt="friends">
+            <div class="overlay1">
+                <p> Childhood Friends </p>
+            </div>
+        </div>
+        <div id="grid5">
+
+            <img src="childhood/grade3.png" alt="grade3">
+            <div class="overlay1">
+                <p> Grade 3 Presentation </p>
+            </div>
+        </div>
+        <div id="grid6">
+            <img src="childhood/sib.png" alt="sib">
+
+            <div class="overlay2">
+                <p> Car Trips with my Brother</p>
+            </div>
+        </div>
+        <div id="grid7">
+
+            <img src="childhood/cart.png" alt="cart">
+            <div class="overlay2">
+                <p> With my first pet </p>
+            </div>
+        </div>
+        <div id="grid8">
+
+            <img src="childhood/fam2.png" alt="fam">
+            <div class="overlay2">
+                <p> Two of Two Family Picture</p>
+            </div>
+        </div>
+        <div id="grid9">
+
+            <img src="childhood/baby.png" alt="baby">
+            <div class="overlay2">
+                <p> 5 month old Gail</p>
+            </div>
+        </div>
+        <div id="grid10">
+
+            <img src="childhood/fam.png" alt="fam">
+            <div class="overlay2">
+                <p>1 out of 2 Family Picture </p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery2">
+        <div id="grid11">
+
+            <img src="childhood/bulak.png" alt="bulak">
+            <div class="overlay">
+                <p> Bulakfest 1st Runner up </p>
+            </div>
+        </div>
+        <div id="grid12">
+
+            <img src="childhood/resto.png" alt="retso">
+            <div class="overlay">
+                <p> Sea Side's Favorite Restaurant </p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

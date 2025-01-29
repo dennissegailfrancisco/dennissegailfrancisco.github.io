@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <title> dennisse gail francisco porfolio</title>
+    <script>
+        function myFunction() {
+            document.getElementById("mgnavcontent").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+
+<nav>
+    <div class="meetgailnav">
+        <div onclick="myFunction()" class="btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="mgnav" id="mgnavcontent">
+
+            <li> <a id="hna" href="index.html"> Home </a> </li>
+
+            <li> <a id="hnb" href="meetgail.html"> Meet Gail </a> </li>
+
+            <li> <a id="hnc" href="journal.html"> Journal </a></li>
+
+            <li> <a id="hnd" href="contact.html"> Contact </a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<body>
+    <div class="gallery1">
+
+        <div id="grid1">
+            <img src="adventure/read.png" alt="read">
+            <div class="overlay1">
+                <p> Read More </p>
+            </div>
+        </div>
+
+        <div id="grid2">
+            <img src="adventure/dance.png" alt="dance">
+            <div class="overlay1">
+                <p> Enroll in Hip Hop Dance Class </p>
+            </div>
+        </div>
+
+        <div id="grid3">
+
+            <img src="adventure/alone.png" alt="alone">
+            <div class="overlay1">
+                <p> Travel Alone </p>
+            </div>
+        </div>
+
+        <div id="grid4">
+
+            <img src="adventure/camp.png" alt="camp">
+            <div class="overlay1">
+                <p> Go Camping With Friends </p>
+            </div>
+        </div>
+        <div id="grid5">
+
+            <img src="adventure/scuba.png" alt="scuba">
+            <div class="overlay1">
+                <p> Scuba Diving </p>
+            </div>
+        </div>
+        <div id="grid6">
+            <img src="adventure/finance.png" alt="finance">
+
+            <div class="overlay2">
+                <p> Be Finacially Stable to <br>
+                    Support Myself</p>
+            </div>
+        </div>
+        <div id="grid7">
+
+            <img src="adventure/enjoy.png" alt="enjoy">
+            <div class="overlay2">
+                <p> Caputure and Enjoy Life </p>
+            </div>
+        </div>
+        <div id="grid8">
+
+            <img src="adventure/house.png" alt="house">
+            <div class="overlay2">
+                <p> Own a vaction house near the beach </p>
+            </div>
+        </div>
+        <div id="grid9">
+
+            <img src="adventure/graduate.png" alt="graduate">
+            <div class="overlay2">
+                <p> Graduate Color with Honors </p>
+            </div>
+        </div>
+        <div id="grid10">
+
+            <img src="adventure/study.png" alt="study">
+            <div class="overlay2">
+                <p> Study Masteral</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery2">
+        <div id="grid11">
+
+            <img src="adventure/business.png" alt="Business">
+            <div class="overlay">
+                <p> Own a Business Corporation </p>
+            </div>
+        </div>
+        <div id="grid12">
+
+            <img src="adventure/grandma.png" alt="grandma's house">
+            <div class="overlay">
+                <p> Build a house for my Grandmother</p>
+            </div>
+        </div>
+        <div id="grid13">
+
+            <img src="adventure/travelaround.png" alt="travel">
+            <div class="overlay">
+                <p> Travel Around the World </p>
+            </div>
+        </div>
+        <div id="grid14">
+
+            <img src="adventure/condo.png" alt="condo">
+            <div class="overlay">
+                <p> Own a Condo Unit </p>
+            </div>
+        </div>
+        <div id="grid15">
+
+            <img src="adventure/singapore.png" alt="singapore">
+            <div class="overlay">
+                <p> Work at Singapore</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

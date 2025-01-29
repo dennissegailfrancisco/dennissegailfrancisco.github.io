@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,intial-scale1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <title> dennisse gail francisco porfolio</title>
+    <script>
+        function myFunction() {
+            document.getElementById("mgnavcontent").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<div class="meetgail">
+
+    <nav>
+        <div class="meetgailnav">
+            <div onclick="myFunction()" class="btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mgnav" id="mgnavcontent">
+
+                <li> <a id="hna" href="index.html"> Home </a> </li>
+
+                <li> <a id="hnb" href="meetgail.html"> Meet Gail </a> </li>
+
+                <li> <a id="hnc" href="journal.html"> Journal </a></li>
+
+                <li> <a id="hnd" href="contact.html"> Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <body>
+        <div class="advent" > <h1 class="a1"> Adventures To Take </h1> 
+            <a class="see" href="adventure.html"> see more </p>
+            <a  href="adventure.html"> <div id="adthumb"></div> </a>
+       </div>
+       <div  class="past">
+       <h1 class="p1"> Past Time </h1>
+       <a class="see" href="pasttime.html"> see more </p>
+        <a href="pasttime.html"> <div id="pastthumb"></div> </a>
+        </div>
+        <div class="child">
+            <h1 class="c1"> How Childhood Was </h1>
+            <a class="see" href="childhood.html"> see more </p>
+        <a  href="childhood.html">  <div id="childthumb"></div> </a>
+       </div>
+
+       <div class="place" >
+        <h1 class="p2"> Places to Set Foot On </h1>
+        <a class="see" href="places.html"> see more </a>
+        <a href="places.html"> <div id="placethumb"></div> </a>
+        
+    </div>
+    </body>

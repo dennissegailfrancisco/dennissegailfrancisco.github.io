@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,intial-scale1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <title> dennisse gail francisco porfolio</title>
+    <script>
+        function myFunction() {
+            document.getElementById("mgnavcontent").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<div class="meetgail">
+
+    <nav>
+        <div class="meetgailnav">
+            <div onclick="myFunction()" class="btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mgnav" id="mgnavcontent">
+
+                <li> <a id="hna" href="index.html"> Home </a> </li>
+
+                <li> <a id="hnb" href="meetgail.html"> Meet Gail </a> </li>
+
+                <li> <a id="hnc" href="journal.html"> Journal </a></li>
+
+                <li> <a id="hnd" href="contact.html"> Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <div class="icons">
+        <a href="mailto:dennissegailfrancisco@baliuagu.edu.ph"> <div id="em"></div></a>
+        <a href="https://www.facebook.com/profile.php?id=100022131780454"> <div id="fb"></div> </a>
+        <a href="https://www.instagram.com/dennissegail03/"><div id="ig"></div> </a>
+        <a href="tel:09126409684"> <div id="tel"></div> <br>
+        <a id="fp" href="#fillup"> Click Here To Schedule a Meeting</a>
+    </div>
+           
+    <form action="https://webdevbasics.net/scripts/demo.php" id="fillup" method="post">
+        <fieldset>
+       <legend> <h3>Client<br> Information <br> Form</h3></legend> 
+      <label for="name">Client's Name:</label> <br>
+         <input type="text" id="name" name="name" required><br>
+     
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email" required><br>
+     
+         <label for="Sc">Preffered Schedule:</label><br>
+         <input type="date" id="Schedule" name="Schedule" required><br>
+         <br>
+         <input type="submit" value="Submit" id="submit">
+       </form>
+     </fieldset>
+    </body>
+    
+</html>
